@@ -7,14 +7,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 //Tela Favoritos
 
-
-
 class FavoriteMoviesScreen extends StatefulWidget {
   final String token;
   FavoriteMoviesScreen({key, required this.token}) : super(key: key);
 
    @override
-  _FavoriteMoviesScreenSatate createState() => _FavoriteMoviesScreenSatate();
+  FavoriteMoviesScreenSatate createState() => FavoriteMoviesScreenSatate();
   
 
 }
@@ -23,7 +21,7 @@ class FavoriteMoviesScreen extends StatefulWidget {
 //////////////////////////////////////////////////////////////////////////////
 
 
-class _FavoriteMoviesScreenSatate extends State<FavoriteMoviesScreen> {
+class FavoriteMoviesScreenSatate extends State<FavoriteMoviesScreen> {
   late String User;
   final dio = Dio();
   List<FilmeModel> favoritos= [];
